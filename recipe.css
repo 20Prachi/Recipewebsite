@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    overflow-x: none;
+    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+}
+
+.foodlist {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    align-self: center;
+    margin: 10px;
+    list-style: none;
+    background-image: linear-gradient(to right top, #132763, #282f63, #363764, #424064, #4c4964, #4c4865, #4c4867, #4c4768, #433b6b, #3a2f6c, #30226e, #25146e);
+    min-height: 8vh;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.foodlist li ,a {
+    margin: 20px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    /* text-shadow: 1px 1px 1px #fff; */
+}
+.footer-section{
+    background-image: linear-gradient(to right top, #132763, #282f63, #363764, #424064, #4c4964, #4c4865, #4c4867, #4c4768, #433b6b, #3a2f6c, #30226e, #25146e);
+    color:#fff;
+    min-height: 50px;
+}
+.mainbox{
+    width: 100%;
+}
+.mainbox1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 180px;
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+img{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+}
+@media screen and (max-width: 768px) {
+    .foodlist {
+        flex-direction: column;
+        align-items: center; /* Stack the links vertically */
+    }
+
+    .foodlist li, a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+        margin: 10px 0;
+    }
+
+    .mainbox1 {
+        flex-direction: column; /* Stack content vertically */
+        margin: 0px 20px;
+    }
+
+    img {
+        height: 250px; /* Slightly smaller images for better fit */
+        width: 250px;
+        margin: 10px 0; /* Adjust margin for smaller screens */
+    }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .foodlist {
+        flex-direction: column;
+        align-items: center; /* Stack the nav items */
+    }
+
+    .foodlist li, a {
+        font-size: 12px; /* Smaller font size for mobile */
+        margin: 5px 0;
+    }
+
+    .footer-section {
+        font-size: 12px; /* Smaller footer text */
+        padding: 5px;
+    }
+
+    .mainbox1 {
+        flex-direction: column;
+        margin: 0px 10px;
+    }
+
+    img {
+        height: 200px; /* Further reduced size for images */
+        width: 200px;
+        margin: 10px 0;
+    }
+}
